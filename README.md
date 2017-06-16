@@ -1,5 +1,5 @@
 # FirstProject
-# Citi corp. ltd. project
+ Citi Corp. Ltd. Project
 
 # Trade Recommendation System Based on user selected sector
 
