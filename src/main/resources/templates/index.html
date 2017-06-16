@@ -1,0 +1,180 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<link REL="StyleSheet" TYPE="text/css" HREF="1.css"/></head>
+
+<meta charset="utf-8" />
+<title>Online Trade Recommendation System</title>
+       
+<body>
+	<div id="header">
+		<div id="logo">
+		<a href="index.html"><img src="http://www.7binaryoptions.com/wp-content/uploads/2016/10/trade-king-auto-logo.png" alt="" /></a>	
+		</div>
+		<h1>Online Trade Recommendation System</h1>
+		
+		<div id="nav">
+		<ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li>
+            <a href="#">Sectors</a>
+            <ul class="dropdown">
+                <li><a href="#">Information Technology</a></li>
+                <li><a href="#">Pharmaceuticals</a></li>
+                <li><a href="#">Automobiles</a></li>
+				<li><a href="#">Cement</a></li>
+                <li><a href="#">Steel</a></li>
+                <li><a href="#">Electric Utility</a></li>
+				<li><a href="#">Energy</a></li>
+                <li><a href="#">Banking</a></li>
+				<li><a href="#">Financial Services</a></li>
+                <li><a href="#">Consumer Goods</a></li>
+                <li><a href="#">Telecommunications</a></li>
+				<li><a href="#">Metals</a></li>
+                <li><a href="#">Electrical Equipment</a></li>
+                <li><a href="#">Paint</a></li>
+			    <li><a href="#">Infrastructure</a></li>	
+            </ul>
+        </li>
+        <li><a href="#">Contact Us</a></li>
+		</ul>
+	    </div>
+	</div>
+	<div id="body">
+	   <div class="search">
+	    <form>
+			<input type="search" name="search" placeholder="Search.."/>
+		</form>
+	   </div>
+		<div class="login">
+			<h2>Login Form</h2>
+
+			Don't have an account?<a href="sign.html">Sign up</a>
+			<form  name="loginform"  method="post" action="dashboard.html">
+			<input  type="text" name="user_name" placeholder="Username"/><br/>
+			<input  type="password" name="pass_word" placeholder="Password"/><br/>
+			<button class= "button"  onclick="login()">LOG IN</button><br/>
+			
+	       <a href="email.html" id="forgot">Forgot password?</a>
+	       </form>
+		</div>
+	 
+	<div class="container">
+	 
+	<div class="footer">
+			<div class="section">
+				<h4><a href="blog.html">blog</a></h4>	
+				<ul>
+					<li>
+						<p>This website template has been designed by</p>	
+						<span>Sept 21, by Nullam | 99 Views | 69 Comments</span>		
+					</li>		
+					<li>
+						<p><a href="http://www.mywebsite.com/">MyWebsite</a>for me, for myself. You can not replace all this text with your own text.</p>
+						<span>Sept 21, by Nullam | 99 Views | 69 Comments</span>				
+					</li>	
+					<li>
+						<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>				
+						<span>Sept 21, by Nullam | 99 Views | 69 Comments</span>
+					</li>		
+				</ul>	
+			</div>
+		<div class="featured">
+		<h4>articles</h4>
+			<ul>
+				<li><div class="box1">
+					<h4>Expecting to get rich quick could cause you to lose everything</h4>		
+					<p>Investing is above all a discipline, so come up with an investing strategy and stick with it. If any promise of riches comes with an expensive price tag for classes or seminars, it’s definitely too good to be true. The average long-term return on a stock is about 7 percent, so if you’re hovering around that on your accounts, you’re doing well.</p>
+			<span style="color:blue">“The most common mistake a new trader makes is they open a trade bigger than they should. They get all caught up in the idea that the stock market is the pot of gold. A new trader needs to trade with even a smaller size than they think and be happy with accumulating small wins.”
+			</span>-Pete Garner (Investment writer)<br/>
+			<p>Unscrupulous trading firms are also a reality, so if you choose to go with a company that’s not on this list, make sure you spend at least 20-30 minutes researching it. Run from anyone who tells you they have insider information on a trade, or you might get the same rap sheet as Martha Stewart. Also be wary of anyone who is pressuring you or making you feel like this is a “once-in-a-lifetime” opportunity. Overall, be very skeptical, do your research, and remember there’s no such thing as a free lunch.</p>		
+					<span>Sept 21, by Nullam | 99 Views | 69 Comments</span></div>
+				</li>		
+				<li><div class="box2">
+					<h4>How diversified your portfolio should be is a matter of how much risk you can take on.</h4>
+			<p>“It’s an age-related question,” says Randy Cameron, a portfolio manager and investment advisor with 35 years of experience. “For a younger person, I’d be very aggressive on exposure to stocks, both large-, mid-, and small-cap stocks.”,“I’d weight them at 85-90 percent of a portfolio,” says Cameron, “with the balance going to a bond, ETFs, and some cash.”
+			Younger investors, or investors without the financial responsibility of children, can handle more risk, Cameron explains. But as you get older or have children, you want to balance your portfolio with lower-risk investments, as you won’t have as much flexibility or time to make up for losses.</p>
+			<h4>The Bottom Line</h4><p>
+			There’s a risk in investing, but don’t forget there’s also a risk in not investing — missing out on the power of compound interest. Use a site that has great learning tools and resources, diversify your portfolio, and stay disciplined and you’ll be one step closer to securing your future.
+			</p>
+					<span>Sept 21, by Nullam | 99 Views | 69 Comments</span></div>
+				</li>	
+				<li><div class="box3">
+					<h4>Take Action</h4>
+				<h4>Play with your own fake money.</h4><p> Give yourself a few thousand in fake money and play investor for a bit while you get the hang of it. “Just start. Even with just a virtual portfolio. Start and then commit to building over time,” says Barratt. “Don’t expect anything major to happen in a short time — build your money muscles by taking risks in a virtual portfolio.” TD Ameritrade offers paperMoney, its virtual trading platform. If you open an account, OptionsHouse offers its paperTRADE account to test your strategies. Outside of actual trading sites, MarketWatch and Investopedia offer simulators to get you started.</p>
+				<h4>Buy what you know.</h4> <p>Our experts suggest you begin by looking at your own life. “Buy what you know, where you are. If you can, identify good companies locally,” says Cameron. “Look for companies you and your friends are talking about, ones with plans to go national.” As for how much time and money you need, “start with what you have,” says Cameron. There is literally no minimum to get started. You can buy one share of a company if you like.</p>
+				<h4>Don’t check your account too often.</h4> <p>The best investors are in it for the long haul. Checking your account too often might make you react to the fluctuations in the market too quickly. Personal finance expert Ramit Sethi has written that you should check your investments, “probably every few months, with a major review every year.” On many sites, you can also set an alert if a stock dives. Other than that, just set a quarterly recurring appointment so you know you’ll handle it at the right time.
+				If you’re saving for retirement, a recent John Oliver skit suggests you invest in low-cost index funds, “and leave it alone. You should check on it about as often as you Google whether or not Gene Hackman is still alive — about once a year.”</p>
+				<span>Sept 21, by Nullam | 99 Views | 69 Comments</span></div>
+			    </li>		
+			</ul>		
+		</div>
+		<div class="section">
+			<h4>ads</h4>	
+			<ul class="ads">
+				<li>
+					<p>Greatest deal Super sale<a href="ad1.jpg"><img src="ad1.jpg"/></a></p>			
+				</li>		
+				<li>
+					<p>The worlds no.one<a href="ad2.jpg"><img src="ad2.jpg"/></a></p>				
+				</li>	
+				<li>
+					<p>Latest news analysis<a href="ad3.jpg"><img src="ad3.jpg"/></a></p>							
+				</li>		
+				<li>
+					<p>Recruiter Employee connect.com<a href="ad4.jpg"><img src="ad4.jpg"/></a></p>
+				</li>
+				<li>
+					<p>Faster report on Ustocks<a href="ad5.png"><img src="ad5.png"/></a></p>				
+				</li>
+			</ul>	
+		</div>
+	</div>
+
+				<marquee><h2>Thank You For Visiting...!!!!</h2></marquee>
+		<div id="footer">
+		<div>
+			<div>
+				<h3>america</h3>
+				<ul>
+					<li>457-380-1654 main</li>				
+					<li>257-301-9417 toll free</li>
+				</ul>			
+			</div>		
+			<div>
+				<h3>europe</h3>
+				<ul>
+					<li>457-380-1654 main</li>				
+					<li>257-301-9417 toll free</li>
+				</ul>			
+			</div>	
+			<div>
+				<h3>canada</h3>
+				<ul>
+					<li>457-380-1654 main</li>				
+					<li>257-301-9417 toll free</li>
+				</ul>			
+			</div>	
+			<div>
+				<h3>middle east</h3>
+				<ul>
+					<li>457-380-1654 main</li>				
+					<li>257-301-9417 toll free</li>
+				</ul>			
+			</div>	
+			<div>
+				<h3>Follow us:</h3>
+				<a class="facebook" href="http://facebook.com" target="_blank">Facebook</a>		
+				<a class="twitter" href="http://twitter.com" target="_blank">Twitter</a>
+			</div>	
+		</div>
+		<div>
+			<p>@Copyright 2017. All rights reserved</p>
+		</div>
+	</div>
+	</div>
+  </div> 
+  <script src="app.js"></script>
+</body>
+</html>

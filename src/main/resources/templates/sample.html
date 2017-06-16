@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript" >
+        function loadDB()
+        {
+            var connection = new ActiveXObject("ADODB.Connection");
+          
+            var connectionString = "Provider=OraOLEDB.Oracle;Data Source=(DESCRIPTION=(CID=GTU_APP)(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=192.168.43.142)(PORT=1521)))(CONNECT_DATA=(SID=123)(SERVER=DEDICATED)));User Id=system;Password=oracle123;"
+
+            connection.Open(connectionstring);
+            var rs = new ActiveXObject("ADODB.Recordset");           
+            rs.Open("select * from login", connection);
+            rs.MoveFirst();
+            var span = document.createElement("span");
+            span.style.color = "Blue";
+            span.innerText = "  username "+"  password ";
+            document.body.appendChild(span);
+            while (!rs.eof)
+            {
+                var span = document.createElement("span");
+                span.style.color = "green";
+                span.innerText = "\n " + rs.fields(0) +" |  "+ rs.fields(1);
+                document.body.appendChild(span);
+                rs.MoveNext();
+            }
+ 
+            rs.close();
+            connection.close();
+        }
+    </script>
+    <style type="text/css">
+        #main {
+            height: 264px;
+        }
+    </style>
+</head>
+<body onload="loadDB()">
+    <div id="show" style="font-size: x-large; font-weight: bold">
+        Employee Details</div>
+</body>
+</html>
+ 
